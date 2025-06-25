@@ -52,21 +52,16 @@ body {
   gap: 40px;
 }
 
-#rock,
-#paper,
-#scissors,
-#rock img,
-#paper img,
-#scissors img {
+.rps,
+.rps img {
+  background-color: transparent;
   height: 120px;
   width: 125px;
   cursor: pointer;
   transition: all ease-in-out 0.4s;
 }
 
-#rock img:hover,
-#paper img:hover,
-#scissors img:hover {
+.rps img:hover {
   transform: scale3d(1.1, 1.1, 1.1);
 }
 
@@ -80,7 +75,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #eeeeee80;
+  background: #eeeeeeb7;
+  backdrop-filter: blur(15px);
   text-align: center;
 }
 
@@ -122,26 +118,24 @@ body {
 }
 
 @media (max-width: 780px) {
-    .game-container {
-        width: 90%;
-        height: 80%;
-    }
+  .game-container {
+    width: 90%;
+    height: 80%;
+  }
 
-    
-    #rock,
-    #paper,
-    #scissors,
-    #rock img,
-    #paper img,
-    #scissors img {
-        height: 80px;
-        width: 85px;
-    }
+  #rock,
+  #paper,
+  #scissors,
+  #rock img,
+  #paper img,
+  #scissors img {
+    height: 80px;
+    width: 85px;
+  }
 
-    .game-pad,
-    #liveFeedback {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    
+  .game-pad,
+  #liveFeedback {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }

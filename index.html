@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Play the classic Rock Paper Scissors game online. Challenge yourself and have fun!"
+    />
+    <meta
+      name="keywords"
+      content="Rock Paper Scissors, Game, Online, Play, Fun"
+    />
+    <meta name="author" content="Md Umar Siddique" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Rock Paper Scissors Game</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="game-container">
-        <div class="game-pad">
-            <div class="rps" id="rock"><img src="./assets/rock.png" alt="Rock"></div>
-            <div class="rps" id="paper"><img src="./assets/paper.png" alt="Paper"></div>
-            <div class="rps" id="scissors"><img src="./assets/scissors.png" alt="Scissors"></div>
-        </div>
+      <div class="game-pad">
+        <button class="rps" id="rock">
+          <img src="./assets/rock.png" alt="Rock" />
+        </button>
+        <button class="rps" id="paper">
+          <img src="./assets/paper.png" alt="Paper" />
+        </button>
+        <button class="rps" id="scissors">
+          <img src="./assets/scissors.png" alt="Scissors" />
+        </button>
+      </div>
 
-        <p id="liveFeedback"></p>
+      <p id="liveFeedback"></p>
     </div>
 
-    
-
     <div class="result-container hidden">
-        <p id="resultMsg"></p>
-        <button id="resetBtn">Reset</button>
+      <p id="resultMsg"></p>
+      <button id="resetBtn">Reset</button>
     </div>
 
     <script type="module" src="./main.js" defer></script>
-</body>
+  </body>
 </html>
