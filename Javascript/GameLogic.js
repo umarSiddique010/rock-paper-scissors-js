@@ -1,4 +1,4 @@
-import GameUI from "./GameUI.js";
+import GameUI from './GameUI.js';
 
 export default class GameLogic {
   constructor() {
@@ -8,9 +8,9 @@ export default class GameLogic {
     this.computerScore = 0;
 
     this.CHOICE = {
-      rock: "rock",
-      paper: "paper",
-      scissors: "scissors",
+      rock: 'rock',
+      paper: 'paper',
+      scissors: 'scissors',
     };
   }
 
@@ -29,7 +29,7 @@ export default class GameLogic {
     if (this.humanScore < 5 && this.computerScore < 5) {
       if (computerChoice === humanChoice) {
         this.gameUI.liveScore(
-          "Draw!",
+          'Draw!',
           this.computerScore,
           this.humanScore,
           computerChoice,
@@ -45,7 +45,7 @@ export default class GameLogic {
       ) {
         this.humanScore++;
         this.gameUI.liveScore(
-          "You win",
+          'You win',
           this.computerScore,
           this.humanScore,
           computerChoice,
@@ -54,7 +54,7 @@ export default class GameLogic {
       } else {
         this.computerScore++;
         this.gameUI.liveScore(
-          "Computer win",
+          'Computer win',
           this.computerScore,
           this.humanScore,
           computerChoice,
@@ -71,14 +71,14 @@ export default class GameLogic {
   gameOver() {
     if (this.humanScore >= 5) {
       this.gameUI.resultBox(
-        "You won the Match!🎉",
+        'You won the Match!🎉',
         this.computerScore,
         this.humanScore
       );
       return true;
     } else if (this.computerScore >= 5) {
       this.gameUI.resultBox(
-        "Computer won the Match!, Better Luck Next Time!🙂",
+        'Computer won the Match!, Better Luck Next Time!🙂',
         this.computerScore,
         this.humanScore
       );

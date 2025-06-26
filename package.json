@@ -1,0 +1,41 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "A modern Rock-Paper-Scissors browser game built with vanilla JavaScript. This project showcases object-oriented programming, SOLID principles, and clean DOM manipulation. It features a responsive UI and is fully unit-tested using Vitest for logic, UI, and user interactions.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest --reporter verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umarSiddique010/rock-paper-scissors-js.git"
+  },
+  "keywords": [
+    "rock-paper-scissors",
+    "javascript-game",
+    "browser-game",
+    "vanilla-js",
+    "object-oriented-programming",
+    "oop",
+    "SOLID-principles",
+    "dom-manipulation",
+    "vitest",
+    "unit-testing",
+    "interactive-game",
+    "frontend-project",
+    "game-ui",
+    "beginner-project",
+    "web-game"
+  ],
+  "author": "Md Umar Siddique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umarSiddique010/rock-paper-scissors-js/issues"
+  },
+  "homepage": "https://github.com/umarSiddique010/rock-paper-scissors-js#readme",
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "vitest": "^3.2.4"
+  }
+}
